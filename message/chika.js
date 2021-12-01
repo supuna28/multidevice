@@ -451,7 +451,7 @@ module.exports = async(chika, msg, m, ind, setting) => {
                     textImg(ind.err())
                 })
             break
-            case 'ytsearch':
+            case prefix+'ytsearch':
                     if (args.length == 0) return reply(`Example: ${prefix + command} Melukis Senja`)
                     query = args.join(" ")
                     get_result = await fetchJson(`https://api.lolhuman.xyz/api/ytsearch?apikey=${0bc2903f193ecc977d61427a}&query=${query}`)
